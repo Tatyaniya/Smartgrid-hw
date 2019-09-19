@@ -1,0 +1,49 @@
+@import "vars.less";
+@import "smart-grid.less";
+
+.reset();
+
+/*
+.debugGrid{
+	.debug(rgba(0, 0, 0, 0.3), 1px #ff0 solid);
+}*/
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+	.wrapper();
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 51px;
+	cursor: pointer;
+	border-radius: 20px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.btn-green {
+	background-color: @color_green_middle;
+    color: @color_white;
+    border: 1px solid @color_green_middle;
+}
+
+.btn-green:hover {
+	background-color: @color_white;
+	color: @color_green_middle;
+}
+
+@import "sections/header.less";
+@import "sections/prop.less";
+@import "sections/adv.less";
+@import "sections/blog.less";
+@import "sections/stats.less";
+

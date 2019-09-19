@@ -1,0 +1,41 @@
+.stats {
+    background: url('../img/bg2.jpg') no-repeat top center;
+    
+    .md(background, #dedfd7);
+}
+
+.statItems{
+	.row-flex();
+	min-height: 620px;
+	align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.statItem{
+    .col();
+    .size(3);
+    .size-md(5);
+    .size-sm(6);
+    .size-xs(12);
+
+    &__number {
+        color: @color_green_middle;
+        font-size: 45px;
+        margin: 15px 0;
+    }
+
+    &__text {
+        color: @color_black;
+        font-size: 20px;
+    }
+
+    &__icon {
+        border-radius: 50%;
+        background: @color_green_middle;
+        width: 119px;
+        height: 119px;
+        margin: 17px auto;
+        line-height: 150px;
+    }
+}

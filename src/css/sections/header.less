@@ -72,15 +72,26 @@ stroke-dashoffset: -83px;
     transition: width 0.7s;
 }
 
+.nav__menu {
+    margin-top: 30px;
+    .sm-block({
+        display: none;
+    });
+}
+
 .menu {
     &:extend(.sg-row);
     justify-content: space-between;
     align-items: center;
-    height: 100%;
-    .sm(display, none);
+    
+    .sm-block({
+        flex-direction: column;
+        padding-bottom: 12px;
+    });
 
     &__item {
         &:extend(.sg-col);
+        .sm(margin-bottom, 10px);
     }
 
     &__link {

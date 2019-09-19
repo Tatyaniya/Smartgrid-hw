@@ -1,0 +1,82 @@
+.packages {
+    padding-top: @section_padding;
+    padding-bottom: @section_padding;
+}
+
+.packagesTitle {
+    &:extend(.title-2);
+}
+
+.packagesItems {
+    &:extend(.sg-row);
+    justify-content: center;
+}
+
+.packagesItem {
+    &:extend(.sg-col);
+    .size(4);
+    width: 370px;
+    background: @bg;
+    text-align: center;
+    margin-bottom: 30px;
+    
+
+    &__subtitle {
+        padding: 23px;
+        font-size: 20px;
+    }
+
+    &__cost {
+        color: @color_white;
+        background: @color_green_light;
+        font-size: 35px;
+        padding: 10px;
+
+        & sup {
+            font-size: 18px;
+        }
+
+        & sub {
+            font-size: 15px;
+        }
+    }
+
+    &__desc {
+        padding: 35px 21%;
+        text-align: left;
+
+        @media screen and (max-width: 1180px) {
+            padding: 35px 18%;
+        }
+
+        .xxs-block({
+            padding: 35px 13%;
+        })
+    }
+
+    &__clause {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 14px;
+    }
+
+    &__clause:before,
+    &__clause--close:before {
+        width: 15px;
+        height: 15px;
+        display: block;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        background-size: cover;
+    }
+
+    &__clause:before {
+        background: url('../img/checkmark.png') no-repeat center center;
+    }
+
+    &__clause--close:before {
+        background: url('../img/close.png') no-repeat center center;
+    }
+}

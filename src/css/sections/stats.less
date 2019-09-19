@@ -5,7 +5,7 @@
 }
 
 .statItems{
-	.row-flex();
+	&:extend(.sg-row);
 	min-height: 620px;
 	align-items: center;
     text-align: center;
@@ -13,7 +13,7 @@
 }
 
 .statItem{
-    .col();
+    &:extend(.sg-col);
     .size(3);
     .size-md(5);
     .size-sm(6);

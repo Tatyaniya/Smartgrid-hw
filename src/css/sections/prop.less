@@ -1,15 +1,16 @@
 .proposal {
     padding-top: 60px;
     padding-bottom: 60px;
+    background: #f7f8fa;
 }
 
 .proposalItems {
-    .row-flex();
+    &:extend(.sg-row);
     justify-content: center;
 }
 
 .proposalItem {
-    .col();
+    &:extend(.sg-col);
     .size(4);
     .size-md(5);
     .size-sm(6);
@@ -31,7 +32,6 @@
 
     &__text {
         max-width: 280px;
-        color: @color_middle;
         margin-bottom: 30px;
     }
 

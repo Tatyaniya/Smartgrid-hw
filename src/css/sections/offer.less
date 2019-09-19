@@ -1,0 +1,53 @@
+.offer {
+    background: url('../img/slaid1.jpg') no-repeat top center;
+    background-size: cover;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    &__title {
+        color: @color_white;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    &__big {
+        font-size: 48px;
+        display: block;
+    }
+
+    &__links {
+        &:extend(.sg-row);
+        justify-content: center;
+    }
+
+    &__link {
+        &:extend(.sg-col);
+        width: 198px;
+        height: 50px;
+        text-align: center;
+        line-height: 48px;
+        border-radius: 50px;
+        font-size: 18px;
+        color: @color_white;
+        border: 1px solid @color_white;
+
+        @media screen and (max-width: 472px) {
+            flex-direction: column;
+        }
+        
+        &:hover {
+            background: @color_green_middle;
+            border: 1px solid @color_green_middle;
+        }
+    
+        @media screen and (max-width: 472px) {
+            &:first-child {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

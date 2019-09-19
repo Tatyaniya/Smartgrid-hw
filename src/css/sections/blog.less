@@ -4,13 +4,11 @@
 }
 
 .blogTitle {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 30px;
+    &:extend(.title-2);
 }
 
 .blogItems{
-    .row-flex();
+    &:extend(.sg-row);
     
     .md-block({
         max-width: 370px;
@@ -19,7 +17,7 @@
 }
 
 .blogItem{
-    .col();
+    &:extend(.sg-col);
     .size(4);
     .md(flex-basis, 100%);
     text-align: center;
@@ -27,11 +25,6 @@
     &__title {
         font-size: 20px;
         margin: 20px 0 16px;
-    }
-
-    &__text {
-        font-size: 14px;
-        line-height: 23px;
     }
 
     &__meta {

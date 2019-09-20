@@ -803,6 +803,8 @@ a {
 
   .stats {
     background: #dedfd7;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .statItem {

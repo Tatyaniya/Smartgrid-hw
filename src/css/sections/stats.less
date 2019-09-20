@@ -1,7 +1,11 @@
 .stats {
     background: url('../img/bg2.jpg') no-repeat top center;
     
-    .md(background, #dedfd7);
+    .md-block({
+        background: #dedfd7;
+        padding-top: @section_padding;
+        padding-bottom: @section_padding;
+    });
 }
 
 .statItems{
